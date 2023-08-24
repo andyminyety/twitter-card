@@ -1,0 +1,299 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #66757f, #00ACEE, #36D8FF, #66757f) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.card-dark {
+    background-color: #000000;
+    color: #E7E9EA;
+    border-radius: 10px;
+}
+
+.card-dim {
+    background-color: #15202b;
+    color: #E7E9EA;
+    border-radius: 10px;
+}
+
+.card-white {
+    background-color: #FFFFFF;
+    color: #0F1419;
+    border-radius: 10px;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+}
+
+.margin-name {
+    margin-left: 12px;
+    font-weight: bold;
+}
+
+.margin-verified {
+    margin-left: 2px;
+    margin-right: 3px;
+    width: 18px;
+    height: 18px;
+}
+
+.margin-usarname {
+    color: #71767B;
+}
+
+.margin-date {
+    color: #71767B;
+    margin-left: 4px;
+}
+
+.margin-options {
+    position: absolute;
+    right: 20px;
+}
+
+.content-padding {
+    padding: 0 30px 0 53px;
+}
+
+.icon {
+    color: #71767B;
+    margin: 0;
+    padding: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.reply {
+    width: 30px;
+    height: 30px;
+}
+
+.retweet {
+    width: 30px;
+    height: 30px;
+}
+
+.like {
+    width: 30px;
+    height: 30px;
+}
+
+.analytics {
+    width: 30px;
+    height: 30px;
+}
+
+.share {
+    width: 30px;
+    height: 30px;
+}
+
+.options {
+    width: 30px;
+    height: 30px;
+}
+
+.icon-count {
+    color: #71767B;
+    margin-left: -50px;
+    font-size: 14px;
+}
+
+a {
+    color: #1D9BF0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.reply:hover, .analytics:hover, 
+.share:hover, .options:hover {
+    background-color: rgba(29, 155, 240, 0.15);
+    color: #1D9BF0;
+}
+
+.reply:hover + .icon-count, .analytics:hover + .icon-count {
+    color: #1D9BF0;
+}
+
+.retweet:hover {
+    background-color: rgba(0, 186, 124, 0.15); 
+    color: #00BA7C;
+}
+
+.retweet:hover + .icon-count {
+    color: #00BA7C;
+}
+
+.like:hover {
+    background-color: rgba(249, 24, 128, 0.15); 
+    color: #F91880;
+}
+
+.like:hover + .icon-count {
+    color: #F91880;
+}
+
+@media (max-width: 375px) {
+    .profile-img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .margin-name {
+        font-size: 12px;
+    }
+
+    .margin-usarname {
+        font-size: 12px;
+    }
+
+    .margin-date {
+        font-size: 12px;
+    }
+
+    .margin-verified {
+        width: 12px;
+        height: 12px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .icon {
+        border: none;
+        margin: 0;
+        padding: 0;
+        width: 16px;
+        height: 16px;
+    }
+
+    .icon-count {
+        margin: 0;
+        padding: 2px;
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+    .profile-img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .margin-name {
+        font-size: 12px;
+    }
+
+    .margin-usarname {
+        font-size: 12px;
+    }
+
+    .margin-date {
+        font-size: 12px;
+    }
+
+    .margin-verified {
+        width: 12px;
+        height: 12px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .icon {
+        border: none;
+        margin: 0;
+        padding: 0;
+        width: 16px;
+        height: 16px;
+    }
+
+    .icon-count {
+        margin-left: -15px;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .profile-img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .margin-name {
+        font-size: 12px;
+    }
+
+    .margin-usarname {
+        font-size: 12px;
+    }
+
+    .margin-date {
+        font-size: 12px;
+    }
+
+    .margin-verified {
+        width: 12px;
+        height: 12px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .icon {
+        border: none;
+        margin: 0;
+        padding: 0;
+        width: 16px;
+        height: 16px;
+    }
+
+    .icon-count {
+        margin: 0;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1250px) {
+    .icon {
+        margin: 0;
+        padding: 5px;
+    }
+
+    .icon-count {
+        margin-left: -25px;
+        padding: 5px;
+    }
+}
+
+@media (min-width: 1250px) and (max-width: 2560px) {
+    .icon {
+        margin: 0;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .icon-count {
+        margin-left: -60px;
+        padding: 5px;
+    }
+}
