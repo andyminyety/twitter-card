@@ -31,13 +31,13 @@ const TweetCard = ({ name, username, image, tweetText, timestamp, style }) => {
           <p className="card-text content-padding" dangerouslySetInnerHTML={{ __html: tweetText }}></p>
           <div className="d-flex justify-content-between content-padding">
             <BiMessageRounded alt="Reply" className="icon reply rounded-circle" onClick={handleButtonClick} />
-              <small className="icon-count">{count}</small>
+            <small className="icon-count">{count}</small>
             <AiOutlineRetweet alt="Retweet" className="icon retweet rounded-circle" onClick={handleButtonClick} />
-              <small className="icon-count">{count}</small>
+            <small className="icon-count">{count}</small>
             <PiHeart alt="Like" className="icon like rounded-circle" onClick={handleButtonClick} />
-              <small className="icon-count">{count}</small>
+            <small className="icon-count">{count}</small>
             <FiBarChart2 alt="Analytics" className="icon analytics rounded-circle" onClick={handleButtonClick} />
-              <small className="icon-count">{count}</small>
+            <small className="icon-count">{count}</small>
             <FiShare alt="Share" className="icon share rounded-circle" />
           </div>
         </div>
